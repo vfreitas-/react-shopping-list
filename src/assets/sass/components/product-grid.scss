@@ -1,0 +1,14 @@
+.grid {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all .4s ease;
+    position: relative;
+    padding: 0 20px;
+    margin: 20px auto;
+}
+.mdl-progress {
+    width: 100%;
+    margin: 5px 0;
+}
