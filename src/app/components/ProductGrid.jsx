@@ -6,8 +6,6 @@ import mock from '_services/mock'
 
 const products = mock.products
 
-console.log(products);
-
 const ProductGrid = () => (
     <div>
         <div className="mdl-progress mdl-js-progress mdl-progress__indeterminate">
