@@ -1,6 +1,7 @@
-$blue: lightblue;
+*, *:after, *:before {
+    box-sizing: border-box;
+}
 
-
-body {
-    background-color: $blue;
+html, body {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
 }
