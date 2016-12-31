@@ -35,10 +35,11 @@ class SidePanel extends React.Component {
                 <Filter label="Categories"
                     filterName='categories'
                     items={this.state.filters.categories}
-                    vih={this.updateFilter.bind(this)}/>
+                    updateFilter={this.updateFilter.bind(this)}/>
                 <Filter label="Variations"
                     filterName='variations'
-                    items={this.state.filters.variations}/>
+                    items={this.state.filters.variations}
+                    updateFilter={this.updateFilter.bind(this)}/>
             </div>
         )
     }

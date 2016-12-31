@@ -4,7 +4,7 @@ import '_sass/components/filter.scss'
 import Accordion from './Accordion.jsx'
 
 
-const Filter = ({ label, filterName, items, vih }) => (
+const Filter = ({ label, filterName, items, updateFilter }) => (
     <div>
         <Accordion id={label} appearence='mdl-color-text--indigo-500'
             title={<h6>{label}</h6>}>
@@ -18,7 +18,7 @@ const Filter = ({ label, filterName, items, vih }) => (
                                     type="checkbox"
                                     checked={items[key]}
                                     id={`${label}_${index}`}
-                                    onChange={() => vih(filterName, key)}
+                                    onChange={() => updateFilter(filterName, key)}
                                 />
                                 <span className="mdl-checkbox__label">
                                     {key}
