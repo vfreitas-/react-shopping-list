@@ -1,4 +1,5 @@
 import React from 'react'
+import PubSub from 'pubsub-js'
 import '_sass/components/side-panel.scss'
 
 import Filter from './Filter.jsx'
@@ -10,6 +11,10 @@ class SidePanel extends React.Component {
         super()
 
         this.state = {filters: mock.filters}
+    }
+
+    componentDidUpdate () {
+        PubSub.publish('filters-updated', this.state.filters)
     }
 
     updateFilter (filterName, key) {
